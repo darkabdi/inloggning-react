@@ -9,7 +9,7 @@ function Form() {
 
     const handleSubmit = ((event)=>{
         event.preventDefault()
-        console.log("submitted muthafucker")
+        console.log("submitted")
         
     })
     return (
@@ -22,8 +22,7 @@ function Form() {
                     <input type="password" placeholder="password" value={passsword} onChange={(e)=>setPassword(e.target.value)}/>
                     
                 </form>
-                    <p>{name}</p>
-                    <p>{passsword}</p>
+                   
                 <button onClick={handleSubmit} >create</button>
                 <Login
                 name = {name} 

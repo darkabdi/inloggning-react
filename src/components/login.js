@@ -9,8 +9,8 @@ function Login(props) {
    
    let handleLogin = (event)=>{
     event.preventDefault()
-    if (props.passsword === newpassword || props.name === newname){
-        console.log("welcome muthafuck")
+    if (props.passsword === newpassword && props.name === newname){
+        console.log("welcome")
     }
     else{
         console.log("nope")
@@ -24,8 +24,11 @@ function Login(props) {
                     <input type="password"  placeholder="password" value={newpassword} onChange={(e)=>setNewPassword(e.target.value)} />
                     <button onClick={handleLogin} >Login</button>
 
-                <p>{console.log(newname)}</p>
+                <p>{newname}</p>
                 <p>{props.name}</p>
+                <p>{props.passsword}</p>
+                <p>{newpassword}</p>
+
 
                 </form>
                   
